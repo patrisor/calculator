@@ -1,0 +1,32 @@
+.button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.operation {
+  background-color: #555555;
+}
+
+.enter {
+  background-color: #8b0000;
+  width: 312px;
+}
+
+.calculator {
+  padding-left: 250px;
+  padding-top: 250px;
+}
+
+.screen {
+  width:310px;
+  height:50px;
+  border:2px solid #f44336;
+}
