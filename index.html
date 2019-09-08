@@ -6,24 +6,24 @@
 	</HEAD>
 	<BODY>
 		<div class="calculator">
-			<div class="screen"></div></BR>
-			<button onclick="button7()" class="button">7</button>
-			<button onclick="button8()" class="button">8</button>
-			<button onclick="button9()" class="button">9</button>
-			<button onclick="buttondiv()" class="button operation">/</button></BR>
-			<button onclick="button4()" class="button">4</button>
-			<button onclick="button5()" class="button">5</button>
-			<button onclick="button6()" class="button">6</button>
-			<button onclick="buttonmult()" class="button operation">*</button></BR>
-			<button onclick="button1()" class="button">1</button>
-			<button onclick="button2()" class="button">2</button>
-			<button onclick="button3()" class="button">3</button>
-			<button onclick="buttonmin()" class="button operation">-</button></BR>
-			<button onclick="button0()" class="button">0</button>
-			<button onclick="buttondec()" class="button">. </button>
-			<button onclick="buttonres()" class="button">R</button>
-			<button onclick="buttonplus()" class="button operation">+</button></BR>
-			<button onclick="buttonenter()" class="button enter">ENTER</button>
+			<div class="screen" id="screen"></div></BR>
+			<button onclick="imbedNumber('7')" class="button">7</button>
+			<button onclick="imbedNumber('8')" class="button">8</button>
+			<button onclick="imbedNumber('9')" class="button">9</button>
+			<button onclick="detect_op('/')" class="button operation">/</button></BR>
+			<button onclick="imbedNumber('4')" class="button">4</button>
+			<button onclick="imbedNumber('5')" class="button">5</button>
+			<button onclick="imbedNumber('6')" class="button">6</button>
+			<button onclick="detect_op('*')" class="button operation">*</button></BR>
+			<button onclick="imbedNumber('1')" class="button">1</button>
+			<button onclick="imbedNumber('2')" class="button">2</button>
+			<button onclick="imbedNumber('3')" class="button">3</button>
+			<button onclick="detect_op('-')" class="button operation">-</button></BR>
+			<button onclick="imbedNumber('0')" class="button">0</button>
+			<button onclick="if (!(document.getElementById('screen').innerHTML).includes('.')) document.getElementById('screen').innerHTML += '.'" class="button">.</button>
+			<button onclick="reset()" class="button">R</button>
+			<button onclick="detect_op('+')" class="button operation">+</button></BR>
+			<button onclick="do_op()" class="button enter">ENTER</button>
 		</div>
 	</BODY>
 </HTML>
